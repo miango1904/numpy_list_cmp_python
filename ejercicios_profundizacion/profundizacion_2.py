@@ -41,6 +41,11 @@ if __name__ == '__main__':
 
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
+    
+    arreglo = tuple(padron)
+    nombres_filtrados=[x for x in nombres if x.startswith(arreglo)]
+    
+    print(nombres_filtrados)
 
     # Se espera obtener:
     # ['Tamara', 'Juan', 'Alberto'......]

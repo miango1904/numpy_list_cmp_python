@@ -11,6 +11,7 @@
 # Requiere mayor tiempo de dedicación e investigación autodidacta.
 
 # IMPORTANTE: NO borrar los comentarios en VERDE o NARANJA
+import random
 
 '''
 Enunciado:
@@ -28,6 +29,11 @@ que ya dispongamos de Python. El objetivo es:
         la suma y los números recoletados
     b) Si el número es mayor a 21 se debe informar al usuario que perdio
 '''
+lista = [random.randint(1,10) for x in range(3)]
+print(lista)
+product = [i for i in lista if sum(lista) <=21]
+print (sum(product))
+
 
 if __name__ == '__main__':
     print('Comenzamos a divertirnos!')

@@ -29,6 +29,10 @@ if __name__ == '__main__':
     # comprendido en dicho rango pasó por ese molinete
 
     # personal_1_10 = [.....]
+    personal_1_10 = [x for x in accesos if x in range (11)]
+    print(personal_1_10)
+    pers_molinete= len(personal_1_10)
+    print('cantidad de personas ingresadas \n',pers_molinete)
 
     # 2)
     # Generar una lista por comprensión de la listas "accesos"
